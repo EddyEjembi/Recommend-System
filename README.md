@@ -20,9 +20,9 @@ Personalized **restaurant recommendations** for demo users: pick a user (or defi
 
 ### Docker
 
-```bash
+```bash 
 git clone https://github.com/EddyEjembi/Recommend-System.git
-cd recommend-System
+cd Recommend-System
 
 docker compose up --build
 ```
