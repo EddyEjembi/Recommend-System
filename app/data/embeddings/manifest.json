@@ -1,0 +1,10 @@
+{
+  "model_name": "all-MiniLM-L6-v2",
+  "embedding_dim": 384,
+  "built_at": "2026-05-15T21:38:32.549386+00:00",
+  "counts": {
+    "businesses": 6387,
+    "reviews": 20000,
+    "users": 8311
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "user_profile_count": 8316,
+  "business_profile_count": 6387,
+  "only_test_users": false,
+  "outputs": {
+    "users": "C:\\Users\\eddye\\Documents\\PROJECTS\\Review-System\\app\\data\\processed\\user_behavior.jsonl",
+    "businesses": "C:\\Users\\eddye\\Documents\\PROJECTS\\Review-System\\app\\data\\processed\\business_behavior.jsonl"
+  }
+}

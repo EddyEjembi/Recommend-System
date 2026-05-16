@@ -1,0 +1,718 @@
+{
+  "existing": [
+    {
+      "user_id": "Hi10sGSZNxQH3NLyWSZ1oA",
+      "kind": "existing",
+      "archetype": "power_reviewer",
+      "name": "Fox",
+      "review_count": 17473,
+      "subset_review_count": 56,
+      "average_stars": 3.77,
+      "avg_text_len": 1556.6964285714287,
+      "is_elite": true,
+      "fans": 3493,
+      "friends_count": 5331,
+      "yelping_since": "2009-05-26 11:33:58"
+    },
+    {
+      "user_id": "jK_SY5ciS1IL82Cf3Ed1_w",
+      "kind": "existing",
+      "archetype": "harsh_critic",
+      "name": "James",
+      "review_count": 378,
+      "subset_review_count": 61,
+      "average_stars": 2.44,
+      "avg_text_len": 1310.0819672131147,
+      "is_elite": true,
+      "fans": 31,
+      "friends_count": 163,
+      "yelping_since": "2007-07-08 18:13:14"
+    },
+    {
+      "user_id": "WwulXySQN8t2hwqH_yWurA",
+      "kind": "existing",
+      "archetype": "generous_rater",
+      "name": "Niki",
+      "review_count": 1512,
+      "subset_review_count": 259,
+      "average_stars": 4.59,
+      "avg_text_len": 915.942084942085,
+      "is_elite": true,
+      "fans": 1746,
+      "friends_count": 6896,
+      "yelping_since": "2014-12-15 03:33:23",
+      "persona": {
+        "user_id": "WwulXySQN8t2hwqH_yWurA",
+        "voice": "Niki has a warm and engaging tone, often infused with humor and personality in her reviews. She tends to provide detailed descriptions of her experiences, focusing on both the food and the overall atmosphere, while also expressing her opinions on various aspects like service and cleanliness. Her writing style is conversational, making her reviews relatable and enjoyable to read, often incorporating emojis and exclamations to convey excitement.",
+        "preferences": [
+          "enjoys unique menu items",
+          "values quick service",
+          "appreciates friendly staff",
+          "likes detailed descriptions"
+        ],
+        "dealbreakers": [
+          "rude service",
+          "unclean environment",
+          "lack of attention to food safety"
+        ],
+        "typical_length": 915,
+        "vocabulary_quirks": [
+          "frequent use of humor",
+          "occasional use of exclamation points"
+        ],
+        "metadata": {
+          "emotional_style": "enthusiastic and supportive",
+          "rating_behavior": "generous rater",
+          "review_priorities": [
+            "food quality",
+            "service quality",
+            "ambiance"
+          ],
+          "archetype": "generous_rater",
+          "persona_source": "warm",
+          "test_archetype": "generous_rater"
+        }
+      }
+    },
+    {
+      "user_id": "j14WgRoU_-2ZE1aw1dXrJg",
+      "kind": "existing",
+      "archetype": "verbose_writer",
+      "name": "Daniel",
+      "review_count": 4333,
+      "subset_review_count": 6,
+      "average_stars": 3.74,
+      "avg_text_len": 4183.333333333333,
+      "is_elite": true,
+      "fans": 3138,
+      "friends_count": 4646,
+      "yelping_since": "2009-01-25 04:35:42"
+    },
+    {
+      "user_id": "XKNZnfHJ6EfkQp8AgOcOJQ",
+      "kind": "existing",
+      "archetype": "terse_writer",
+      "name": "Edgar",
+      "review_count": 34,
+      "subset_review_count": 5,
+      "average_stars": 4.23,
+      "avg_text_len": 53.2,
+      "is_elite": false,
+      "fans": 0,
+      "friends_count": 345,
+      "yelping_since": "2008-01-21 21:06:25",
+      "persona": {
+        "user_id": "XKNZnfHJ6EfkQp8AgOcOJQ",
+        "voice": "Edgar writes very short, enthusiastic reviews primarily in Spanish. His style is extremely terse, often just a single sentence or phrase, and always positive. He focuses solely on the food, particularly tacos, using words like 'Excelente' and 'Auténtico' to express his approval. There is no fluff, no detailed descriptions, just a quick, happy verdict.",
+        "preferences": [
+          "Tacos",
+          "Authentic Mexican food",
+          "Food quality",
+          "Variety of tacos"
+        ],
+        "dealbreakers": [],
+        "typical_length": 44,
+        "vocabulary_quirks": [
+          "Occasional Spanglish (e.g., 'Best tacos in Philly')",
+          "Frequent use of 'Excelente'"
+        ],
+        "metadata": {
+          "archetype": "terse_writer",
+          "primary_language": "Spanish",
+          "persona_source": "warm",
+          "test_archetype": "terse_writer"
+        }
+      }
+    }
+  ],
+  "cold_start": [
+    {
+      "user_id": "cold_ng_001_lagos_budget_diner",
+      "kind": "cold_start",
+      "archetype": "lagos_budget_diner",
+      "demographics": {
+        "city": "Lagos",
+        "country": "Nigeria",
+        "age_band": "25-34",
+        "language": "Nigerian English with mild pidgin"
+      },
+      "preferences": {
+        "budget": "low-to-mid",
+        "cuisines": [
+          "Nigerian",
+          "Jollof",
+          "Suya",
+          "Continental"
+        ],
+        "tone": "casual, friendly",
+        "review_style": "short and expressive, occasional pidgin (e.g. 'sha', 'abi')"
+      },
+      "service_expectations": {
+        "wait_time_tolerance": "medium",
+        "price_sensitivity": "high",
+        "portion_size_importance": "high"
+      },
+      "notes": "Will mention traffic, value-for-money, and portion sizes naturally.",
+      "persona": {
+        "user_id": "cold_ng_001_lagos_budget_diner",
+        "voice": "casual, friendly, and direct with a Lagos urban flavor; writes like they're telling a friend about the spot; occasionally uses mild pidgin or local expressions like 'sha', 'abi', 'no be small' to emphasize points; naturally mentions traffic or location context",
+        "preferences": [
+          "low-to-mid budget friendly",
+          "Nigerian and West African cuisines (Jollof, Suya)",
+          "generous portion sizes",
+          "value-for-money",
+          "casual dining spots"
+        ],
+        "dealbreakers": [
+          "overpriced small portions",
+          "rude or very slow service",
+          "poor hygiene"
+        ],
+        "typical_length": 350,
+        "vocabulary_quirks": [
+          "mild pidgin insertions ('sha', 'abi', 'no be small')",
+          "may use 'chop' for eat",
+          "traffic mentions as context",
+          "comparative phrases like 'for this price, e try'"
+        ],
+        "metadata": {
+          "archetype": "lagos_budget_diner",
+          "city": "Lagos",
+          "age_band": "25-34",
+          "language": "Nigerian English with mild pidgin",
+          "cold_start": true,
+          "neighbor_influence": "short-to-medium length, expressive, mostly positive, occasional exclamations",
+          "persona_source": "cold",
+          "neighbor_user_ids": [
+            "XGpAGq4j9dxQOborVPPEIA",
+            "lLE9v9rNcciAi6QxAUSWzw",
+            "4esCRKNFqTUbIeYGiIOD8Q",
+            "o9QkuHIyxmqbORF7PeAbuw",
+            "Qj3D2t1AeMIDGPbQtazguw"
+          ],
+          "neighbor_scores": [
+            0.46225112676620483,
+            0.45197224617004395,
+            0.4388654828071594,
+            0.421037882566452,
+            0.4134194850921631
+          ],
+          "cold_search_query_excerpt": "Reviewer archetype: lagos_budget_diner. Location: Lagos, Nigeria. Age band: 25-34. Language: Nigerian English with mild pidgin. Tone: casual, friendly. Review style: short and expressive, occasional pidgin (e.g. 'sha', 'abi'). Budget: low-to-mid. Cuisines: Nigerian, Jollof, Suya, Continental. Price sensitivity: high. Wait tolerance: medium. Will mention traffic, value-for-money, and portion sizes naturally.",
+          "test_archetype": "lagos_budget_diner"
+        }
+      }
+    },
+    {
+      "user_id": "cold_ng_002_abuja_formal_professional",
+      "kind": "cold_start",
+      "archetype": "abuja_formal_professional",
+      "demographics": {
+        "city": "Abuja",
+        "country": "Nigeria",
+        "age_band": "35-44",
+        "language": "Formal Nigerian English"
+      },
+      "preferences": {
+        "budget": "high",
+        "cuisines": [
+          "Continental",
+          "Asian fusion",
+          "Fine-dining Nigerian"
+        ],
+        "tone": "measured, articulate",
+        "review_style": "longer, structured, balanced critique"
+      },
+      "service_expectations": {
+        "wait_time_tolerance": "low",
+        "price_sensitivity": "low",
+        "ambience_importance": "high",
+        "service_formality_importance": "high"
+      },
+      "notes": "Rarely uses pidgin. Notices wine list, plating, and service pacing."
+    },
+    {
+      "user_id": "cold_ng_003_ph_critical_foodie",
+      "kind": "cold_start",
+      "archetype": "ph_critical_foodie",
+      "demographics": {
+        "city": "Port Harcourt",
+        "country": "Nigeria",
+        "age_band": "28-35",
+        "language": "Nigerian English with frequent pidgin"
+      },
+      "preferences": {
+        "budget": "mid",
+        "cuisines": [
+          "Bole",
+          "Native Rivers cuisine",
+          "Seafood",
+          "Nigerian"
+        ],
+        "tone": "blunt, opinionated",
+        "review_style": "medium-length, calls out issues directly"
+      },
+      "service_expectations": {
+        "wait_time_tolerance": "low",
+        "price_sensitivity": "medium",
+        "authenticity_importance": "very high"
+      },
+      "notes": "Will call out inauthentic preparations of native dishes specifically."
+    },
+    {
+      "user_id": "cold_ng_004_yaba_student_casual",
+      "kind": "cold_start",
+      "archetype": "yaba_student_casual",
+      "demographics": {
+        "city": "Lagos (Yaba)",
+        "country": "Nigeria",
+        "age_band": "18-24",
+        "language": "Casual Nigerian English, heavy pidgin and slang"
+      },
+      "preferences": {
+        "budget": "very low",
+        "cuisines": [
+          "Suya",
+          "Shawarma",
+          "Indomie spots",
+          "Local rice joints"
+        ],
+        "tone": "playful, slangy",
+        "review_style": "short and punchy, exclamations, light slang"
+      },
+      "service_expectations": {
+        "wait_time_tolerance": "medium",
+        "price_sensitivity": "very high",
+        "vibe_importance": "high"
+      },
+      "notes": "Vibe and value matter more than service formality."
+    },
+    {
+      "user_id": "cold_ng_005_ibadan_family_diner",
+      "kind": "cold_start",
+      "archetype": "ibadan_family_diner",
+      "demographics": {
+        "city": "Ibadan",
+        "country": "Nigeria",
+        "age_band": "40-50",
+        "language": "Nigerian English, occasional Yoruba phrases"
+      },
+      "preferences": {
+        "budget": "mid",
+        "cuisines": [
+          "Amala",
+          "Ewedu",
+          "Buka-style",
+          "Family restaurants"
+        ],
+        "tone": "warm and descriptive",
+        "review_style": "medium-length, focuses on portion sizes and family suitability"
+      },
+      "service_expectations": {
+        "wait_time_tolerance": "high",
+        "price_sensitivity": "medium",
+        "portion_size_importance": "very high"
+      },
+      "notes": "Will praise generous portions and family-friendly seating.",
+      "persona": {
+        "user_id": "cold_ng_005_ibadan_family_diner",
+        "voice": "This reviewer is warm and descriptive, often focusing on the family-friendly aspects of dining experiences. They tend to highlight generous portions and the suitability of restaurants for families. Their writing style is straightforward yet engaging, making sure to convey both the food quality and the overall atmosphere in a relatable manner.",
+        "preferences": [
+          "mid budget",
+          "generous portions",
+          "family-friendly seating",
+          "traditional Nigerian cuisines"
+        ],
+        "dealbreakers": [
+          "small portion sizes",
+          "uncomfortable seating",
+          "slow service"
+        ],
+        "typical_length": 500,
+        "vocabulary_quirks": [
+          "occasional Yoruba phrases"
+        ],
+        "metadata": {
+          "emotional_style": "warm and practical",
+          "rating_behavior": "generous but discerning",
+          "review_priorities": [
+            "portion size",
+            "family suitability",
+            "food taste"
+          ],
+          "archetype": "ibadan_family_diner",
+          "persona_source": "cold",
+          "neighbor_user_ids": [
+            "XGpAGq4j9dxQOborVPPEIA",
+            "_DpMcBLaiSdQq1jTNn8htg",
+            "4esCRKNFqTUbIeYGiIOD8Q",
+            "D7VXsGrtaN9JKVWSrCuDOA",
+            "2ZAGNRs2kmUk1H2BOW_3OA"
+          ],
+          "neighbor_scores": [
+            0.5377172827720642,
+            0.49729782342910767,
+            0.4948253631591797,
+            0.4829423129558563,
+            0.47891896963119507
+          ],
+          "cold_search_query_excerpt": "Reviewer archetype: ibadan_family_diner. Location: Ibadan, Nigeria. Age band: 40-50. Language: Nigerian English, occasional Yoruba phrases. Tone: warm and descriptive. Review style: medium-length, focuses on portion sizes and family suitability. Budget: mid. Cuisines: Amala, Ewedu, Buka-style, Family restaurants. Price sensitivity: medium. Wait tolerance: high. Will praise generous portions and family-friendly seating.",
+          "test_archetype": "ibadan_family_diner"
+        }
+      }
+    },
+    {
+      "user_id": "api_cold_b33bce73e7d741a4",
+      "kind": "cold_start",
+      "archetype": "ibadan_family_diner",
+      "demographics": {
+        "city": "Ibadan",
+        "country": "Nigeria",
+        "age_band": "40-50",
+        "language": "Nigerian English, occasional Yoruba phrases"
+      },
+      "preferences": {
+        "budget": "mid",
+        "cuisines": [
+          "Amala",
+          "Ewedu",
+          "Buka-style",
+          "Family restaurants"
+        ],
+        "tone": "warm and descriptive",
+        "review_style": "medium-length, focuses on portion sizes and family suitability"
+      },
+      "service_expectations": {
+        "wait_time_tolerance": "high",
+        "price_sensitivity": "medium",
+        "portion_size_importance": "very high"
+      },
+      "notes": "Will praise generous portions and family-friendly seating.",
+      "persona": {
+        "user_id": "api_cold_b33bce73e7d741a4",
+        "voice": "This reviewer has a warm and descriptive tone, often sharing personal anecdotes that highlight family dining experiences. They appreciate generous portions and tend to emphasize the suitability of restaurants for family gatherings. Their writing style is medium-length, with a focus on the experience of dining with loved ones, making their reviews relatable and inviting.",
+        "preferences": [
+          "family-friendly seating",
+          "generous portions",
+          "mid budget",
+          "Buka-style cuisine",
+          "Amala and Ewedu"
+        ],
+        "dealbreakers": [
+          "small portion sizes",
+          "poor service",
+          "lack of family accommodations"
+        ],
+        "typical_length": 400,
+        "vocabulary_quirks": [
+          "occasional Yoruba phrases"
+        ],
+        "metadata": {
+          "emotional_style": "warm and practical",
+          "rating_behavior": "generous with praise for family-friendly aspects",
+          "review_priorities": "focus on portion sizes and family suitability",
+          "archetype": "ibadan_family_diner",
+          "persona_source": "cold",
+          "neighbor_user_ids": [
+            "XGpAGq4j9dxQOborVPPEIA",
+            "_DpMcBLaiSdQq1jTNn8htg",
+            "4esCRKNFqTUbIeYGiIOD8Q",
+            "D7VXsGrtaN9JKVWSrCuDOA",
+            "2ZAGNRs2kmUk1H2BOW_3OA"
+          ],
+          "neighbor_scores": [
+            0.5377172827720642,
+            0.49729782342910767,
+            0.4948253631591797,
+            0.4829423129558563,
+            0.47891896963119507
+          ],
+          "cold_search_query_excerpt": "Reviewer archetype: ibadan_family_diner. Location: Ibadan, Nigeria. Age band: 40-50. Language: Nigerian English, occasional Yoruba phrases. Tone: warm and descriptive. Review style: medium-length, focuses on portion sizes and family suitability. Budget: mid. Cuisines: Amala, Ewedu, Buka-style, Family restaurants. Price sensitivity: medium. Wait tolerance: high. Will praise generous portions and family-friendly seating.",
+          "test_archetype": "ibadan_family_diner"
+        }
+      }
+    },
+    {
+      "user_id": "api_cold_f22ce9d6610a4b8b",
+      "kind": "cold_start",
+      "archetype": "Naija_friend_diner",
+      "demographics": {
+        "city": "Warri",
+        "country": "Nigeria",
+        "age_band": "23-35",
+        "language": "Nigerian English, Loves Pidgin and slangs"
+      },
+      "preferences": {
+        "budget": "mid",
+        "cuisines": [
+          "BBQ",
+          "Shawarma",
+          "Buka-style",
+          "New budget friendly restaurants"
+        ],
+        "tone": "warm, funny, and sarcastic",
+        "review_style": "medium-length, focuses on good taste, budget friendly, and nice ambiance"
+      },
+      "service_expectations": {
+        "wait_time_tolerance": "low",
+        "price_sensitivity": "medium",
+        "portion_size_importance": "very high"
+      },
+      "notes": "Will praise generous portions and nice environment.",
+      "persona": {
+        "user_id": "api_cold_f22ce9d6610a4b8b",
+        "voice": "A warm and humorous tone, often laced with a touch of sarcasm, this reviewer enjoys sharing experiences with friends and appreciates a casual vibe in their writing. They favor a conversational style that feels approachable, often including local slang and cultural references that resonate with their audience.",
+        "preferences": [
+          "mid budget",
+          "generous portions",
+          "nice ambiance",
+          "BBQ",
+          "Shawarma",
+          "Buka-style"
+        ],
+        "dealbreakers": [
+          "slow service",
+          "small portions",
+          "poor hygiene"
+        ],
+        "typical_length": 500,
+        "vocabulary_quirks": [
+          "uses Nigerian slang and pidgin",
+          "frequent humor and sarcasm"
+        ],
+        "metadata": {
+          "emotional_style": "friendly and relatable",
+          "rating_behavior": "generous with 4-5 stars for good experiences",
+          "review_priorities": "taste, portion size, and ambiance",
+          "persona_source": "cold",
+          "neighbor_user_ids": [
+            "4esCRKNFqTUbIeYGiIOD8Q",
+            "XGpAGq4j9dxQOborVPPEIA",
+            "h500Ce4x1x_hpm_Kzl3FJw",
+            "ZkH58lKfe0SPzLLEhVnHwg",
+            "vFgyVcxtwM21AMPDfZP_ig"
+          ],
+          "neighbor_scores": [
+            0.4790063500404358,
+            0.44296082854270935,
+            0.4323132038116455,
+            0.4311714172363281,
+            0.4240996539592743
+          ],
+          "cold_search_query_excerpt": "Reviewer archetype: Naija_friend_diner. Location: Warri, Nigeria. Age band: 23-35. Language: Nigerian English, Loves Pidgin and slangs. Tone: warm, funny, and sarcastic. Review style: medium-length, focuses on good taste, budget friendly, and nice ambiance. Budget: mid. Cuisines: BBQ, Shawarma, Buka-style, New budget friendly restaurants. Price sensitivity: medium. Wait tolerance: low. Will praise generous portions and nice environment.",
+          "test_archetype": "Naija_friend_diner"
+        }
+      }
+    },
+    {
+      "user_id": "api_cold_707dd36eab434cc9",
+      "kind": "cold_start",
+      "archetype": "Naija_young_diner",
+      "demographics": {
+        "city": "Warri",
+        "country": "Nigeria",
+        "age_band": "23-35",
+        "language": "Nigerian English mix with Pidgin, Loves Pidgin and slangs"
+      },
+      "preferences": {
+        "budget": "mid",
+        "cuisines": [
+          "BBQ",
+          "Shawarma",
+          "Buka-style",
+          "New budget friendly restaurants"
+        ],
+        "tone": "warm, funny, and sarcastic",
+        "review_style": "medium-length, focuses on good taste, budget friendly, and nice ambiance"
+      },
+      "service_expectations": {
+        "wait_time_tolerance": "low",
+        "price_sensitivity": "medium",
+        "portion_size_importance": "very high"
+      },
+      "notes": "Will praise generous portions and nice environment.",
+      "persona": {
+        "user_id": "api_cold_707dd36eab434cc9",
+        "voice": "A warm and humorous tone, often sprinkled with sarcasm and local slang, making reviews relatable and engaging. They express their thoughts in a conversational manner, reflecting a young, vibrant personality.",
+        "preferences": [
+          "mid budget",
+          "generous portions",
+          "nice ambiance",
+          "BBQ",
+          "Shawarma",
+          "Buka-style",
+          "new budget friendly restaurants"
+        ],
+        "dealbreakers": [
+          "long wait times",
+          "small portions"
+        ],
+        "typical_length": 500,
+        "vocabulary_quirks": [
+          "uses Pidgin frequently",
+          "occasional slang"
+        ],
+        "metadata": {
+          "emotional_style": "playful and sarcastic",
+          "rating_behavior": "generous with high ratings for good portions",
+          "review_priorities": "taste, value for money, and ambiance",
+          "persona_source": "cold",
+          "neighbor_user_ids": [
+            "4esCRKNFqTUbIeYGiIOD8Q",
+            "XGpAGq4j9dxQOborVPPEIA",
+            "vFgyVcxtwM21AMPDfZP_ig",
+            "ZkH58lKfe0SPzLLEhVnHwg",
+            "h500Ce4x1x_hpm_Kzl3FJw"
+          ],
+          "neighbor_scores": [
+            0.4799935519695282,
+            0.4498386085033417,
+            0.4265672564506531,
+            0.4263915717601776,
+            0.4152718484401703
+          ],
+          "cold_search_query_excerpt": "Reviewer archetype: Naija_young_diner. Location: Warri, Nigeria. Age band: 23-35. Language: Nigerian English mix with Pidgin, Loves Pidgin and slangs. Tone: warm, funny, and sarcastic. Review style: medium-length, focuses on good taste, budget friendly, and nice ambiance. Budget: mid. Cuisines: BBQ, Shawarma, Buka-style, New budget friendly restaurants. Price sensitivity: medium. Wait tolerance: low. Will praise generous portions and nice environment.",
+          "test_archetype": "Naija_young_diner"
+        }
+      }
+    },
+    {
+      "user_id": "api_cold_13dd1ca22dee4454",
+      "kind": "cold_start",
+      "archetype": "Naija_young_diner",
+      "demographics": {
+        "city": "Warri",
+        "country": "Nigeria",
+        "age_band": "23-35",
+        "language": "Loves Nigerian Pidgin and slangs"
+      },
+      "preferences": {
+        "budget": "mid",
+        "cuisines": [
+          "BBQ",
+          "Shawarma",
+          "Buka-style",
+          "New budget friendly restaurants"
+        ],
+        "tone": "warm, funny, and sarcastic",
+        "review_style": "medium-length, focuses on good taste, budget friendly, and nice ambiance"
+      },
+      "service_expectations": {
+        "wait_time_tolerance": "low",
+        "price_sensitivity": "medium",
+        "portion_size_importance": "very high"
+      },
+      "notes": "Will praise generous portions and nice environment.",
+      "persona": {
+        "user_id": "api_cold_13dd1ca22dee4454",
+        "voice": "This user has a warm and humorous tone, often using Nigerian Pidgin and slangs to express their thoughts. They appreciate a bit of sarcasm in their writing, making it relatable and engaging while focusing on the experience of eating out. Their style is casual, making it easy for others to connect with their reviews.",
+        "preferences": [
+          "mid budget",
+          "BBQ",
+          "Shawarma",
+          "Buka-style",
+          "new budget friendly restaurants"
+        ],
+        "dealbreakers": [
+          "small portions",
+          "bad ambiance",
+          "slow service"
+        ],
+        "typical_length": 400,
+        "vocabulary_quirks": [
+          "uses Nigerian Pidgin",
+          "frequent slang expressions"
+        ],
+        "metadata": {
+          "emotional_style": "warm and funny",
+          "rating_behavior": "focuses on taste and portions",
+          "review_priorities": "ambiance and budget friendliness",
+          "archetype": "Naija_young_diner",
+          "persona_source": "cold",
+          "neighbor_user_ids": [
+            "4esCRKNFqTUbIeYGiIOD8Q",
+            "XGpAGq4j9dxQOborVPPEIA",
+            "ZkH58lKfe0SPzLLEhVnHwg",
+            "vFgyVcxtwM21AMPDfZP_ig",
+            "h500Ce4x1x_hpm_Kzl3FJw"
+          ],
+          "neighbor_scores": [
+            0.4930987060070038,
+            0.4482197165489197,
+            0.44242411851882935,
+            0.4366089105606079,
+            0.4358314573764801
+          ],
+          "cold_search_query_excerpt": "Reviewer archetype: Naija_young_diner. Location: Warri, Nigeria. Age band: 23-35. Language: Loves Nigerian Pidgin and slangs. Tone: warm, funny, and sarcastic. Review style: medium-length, focuses on good taste, budget friendly, and nice ambiance. Budget: mid. Cuisines: BBQ, Shawarma, Buka-style, New budget friendly restaurants. Price sensitivity: medium. Wait tolerance: low. Will praise generous portions and nice environment.",
+          "test_archetype": "Naija_young_diner"
+        }
+      }
+    },
+    {
+      "user_id": "api_cold_0ebbafef02b848d0",
+      "kind": "cold_start",
+      "archetype": "Young-family-man",
+      "demographics": {
+        "age_band": "40-50",
+        "city": "Ibadan",
+        "country": "Nigeria",
+        "language": "Nigerian English, occasional Yoruba phrases"
+      },
+      "preferences": {
+        "budget": "mid",
+        "cuisines": [
+          "Amala",
+          "Ewedu",
+          "Buka-style",
+          "Family restaurants"
+        ],
+        "review_style": "medium-length, focuses on portion sizes and family suitability",
+        "tone": "warm and descriptive"
+      },
+      "service_expectations": {
+        "portion_size_importance": "very high",
+        "price_sensitivity": "medium",
+        "wait_time_tolerance": "high"
+      },
+      "notes": "Will praise generous portions and family-friendly seating.",
+      "persona": {
+        "user_id": "api_cold_0ebbafef02b848d0",
+        "voice": "As a young family man from Ibadan, my reviews reflect a warm and descriptive tone, often focusing on how suitable a place is for families, especially in terms of portion sizes and seating arrangements. I appreciate a good narrative that highlights the experience, particularly when dining with children. My writing style tends to be medium-length, as I aim to balance detail with brevity, ensuring my readers get a clear picture without being overwhelmed by information.",
+        "preferences": [
+          "mid budget",
+          "family-friendly seating",
+          "generous portions"
+        ],
+        "dealbreakers": [
+          "small portion sizes",
+          "poor hygiene",
+          "lack of family-friendly options"
+        ],
+        "typical_length": 400,
+        "vocabulary_quirks": [
+          "occasional Yoruba phrases"
+        ],
+        "metadata": {
+          "emotional_style": "warm and practical",
+          "rating_behavior": "thoughtful and fair",
+          "persona_source": "cold",
+          "neighbor_user_ids": [
+            "XGpAGq4j9dxQOborVPPEIA",
+            "4esCRKNFqTUbIeYGiIOD8Q",
+            "o9QkuHIyxmqbORF7PeAbuw",
+            "D7VXsGrtaN9JKVWSrCuDOA",
+            "n5gUVvfTc6QlZzjjLUXoZg"
+          ],
+          "neighbor_scores": [
+            0.46671611070632935,
+            0.45774030685424805,
+            0.44942331314086914,
+            0.44866299629211426,
+            0.425286203622818
+          ],
+          "cold_search_query_excerpt": "Reviewer archetype: Young-family-man. Location: Ibadan, Nigeria. Age band: 40-50. Language: Nigerian English, occasional Yoruba phrases. Tone: warm and descriptive. Review style: medium-length, focuses on portion sizes and family suitability. Budget: mid. Cuisines: Amala, Ewedu, Buka-style, Family restaurants. Price sensitivity: medium. Wait tolerance: high. Will praise generous portions and family-friendly seating.",
+          "test_archetype": "Young-family-man"
+        }
+      }
+    }
+  ]
+}
