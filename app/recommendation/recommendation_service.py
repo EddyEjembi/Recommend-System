@@ -2,8 +2,11 @@
 
 from __future__ import annotations
 
+import logging
 from dataclasses import dataclass
 from pathlib import Path
+
+logger = logging.getLogger(__name__)
 
 from app.core.constants import (
     RECOMMEND_COMPLETION_TEMPERATURE,
@@ -118,6 +121,13 @@ class RecommendationService:
             raise ValueError(
                 f"No candidate businesses found for user_id={user_id!r}. Check embeddings and behaviour data."
             )
+        logger.info(
+            "[recommend] user_id=%s limit=%d candidate_pool=%d ids=%s",
+            user_id,
+            limit,
+            len(candidates),
+            [c.business_id for c in candidates[:8]],
+        )
 
         history = self._registry.user_retriever.fetch_user_history(
             user_id,
@@ -164,6 +174,8 @@ class RecommendationService:
             max_tokens=self._config.max_llm_tokens,
             json_mode=json_mode,
         )
+        print(f"\n--- [recommend] LLM raw response (user_id={user_id}) ---\n{raw}\n--- end LLM response ---\n")
+        logger.info("[recommend] LLM raw response (user_id=%s):\n%s", user_id, raw)
 
         allowed_ids = {c.business_id for c in candidates}
         name_by_id = {c.business_id: c.name for c in candidates}

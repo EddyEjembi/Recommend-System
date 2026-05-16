@@ -40,6 +40,27 @@ def test_parse_recommendation_generation_result_valid() -> None:
     assert out.recommendations[0].score == pytest.approx(0.91)
 
 
+def test_parse_recommendation_resolves_fuzzy_business_name() -> None:
+    raw = json.dumps(
+        {
+            "recommendations": [
+                {
+                    "business_name": "Mama Kitchen & Grill",
+                    "score": 0.88,
+                    "reason": "Affordable and generous portions suit your budget-focused tastes.",
+                }
+            ]
+        }
+    )
+    out = parse_recommendation_generation_result(
+        raw,
+        allowed_business_ids={"biz_a"},
+        name_by_id={"biz_a": "Mama Kitchen"},
+        limit=5,
+    )
+    assert out.recommendations[0].business_id == "biz_a"
+
+
 def test_parse_recommendation_rejects_unknown_business() -> None:
     raw = json.dumps(
         {
