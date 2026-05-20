@@ -13,8 +13,5 @@ def health_check() -> dict[str, str]:
 
 @router.get("/ready")
 def readiness_check() -> dict[str, str]:
-    """Return readiness state.
-
-    Extend this to verify downstream dependencies (vector store, LLM client, etc.).
-    """
+    """Return readiness state."""
     return {"status": "ready"}
