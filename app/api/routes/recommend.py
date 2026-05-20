@@ -48,7 +48,7 @@ def make_recommendations(
     payload: RecommendRequest,
     credentials: Annotated[HTTPAuthorizationCredentials | None, Depends(_bearer)] = None,
 ) -> RecommendResponse:
-    """Generate personalized recommendations (Bearer key preferred; env fallback allowed)."""
+    """Generate personalized recommendations Requires `Authorization: Bearer <openai_api_key>`."""
     llm = _llm_client_for_request(credentials)
     service = _recommendation_service()
     resolved_user_id: str
